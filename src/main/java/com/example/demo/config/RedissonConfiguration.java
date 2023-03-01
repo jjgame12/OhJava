@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @author jj
  */
 @Configuration
-public class RedisConfiguration {
+public class RedissonConfiguration {
     @Bean
     public RedissonClient redissonClient() {
         return Redisson.create();
