@@ -18,3 +18,9 @@ allprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 }
+
+subprojects {
+    dependencies {
+        implementation('mysql:mysql-connector-java:8.0.30')
+    }
+}
