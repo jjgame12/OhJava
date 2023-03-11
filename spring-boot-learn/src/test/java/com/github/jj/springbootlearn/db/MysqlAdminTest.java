@@ -19,7 +19,8 @@ class MysqlAdminTest {
 
     @Test
     public void testGetPrimaryKeys() throws SQLException {
-        System.out.println(mysqlAdmin.getPrimaryKeys("test"));
+        final String tableName = "specific_key_table";
+        System.out.println("表【" + tableName + "】主键为：" + mysqlAdmin.getPrimaryKeys(tableName));
     }
 
 }
