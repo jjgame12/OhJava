@@ -1,7 +1,5 @@
 package com.github.jj.springbootlearn.db;
 
-import org.springframework.jdbc.core.JdbcTemplate;
-
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
