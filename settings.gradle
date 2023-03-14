@@ -1,3 +1,4 @@
 rootProject.name = 'oh-java'
 
 include(':spring-boot-learn')
+include(':db-core')

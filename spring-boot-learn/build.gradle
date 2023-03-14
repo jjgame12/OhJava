@@ -1,15 +1,9 @@
-group = 'com.github.jj'
-version = '1.0.0-SNAPSHOT'
 sourceCompatibility = '17'
 
 configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
-}
-
-repositories {
-    mavenCentral()
 }
 
 dependencies {

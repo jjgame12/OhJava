@@ -13,14 +13,18 @@ plugins {
 group = 'com.github.jj'
 version = '1.0.0-SNAPSHOT'
 
-allprojects {
+subprojects {
     apply plugin: 'java'
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
-}
 
-subprojects {
     dependencies {
         implementation('mysql:mysql-connector-java:8.0.30')
+        testImplementation('org.junit.jupiter:junit-jupiter-api:5.8.1')
+        testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.8.1')
+    }
+
+    repositories {
+        mavenCentral()
     }
 }
